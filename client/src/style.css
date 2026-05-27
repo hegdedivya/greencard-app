@@ -1,0 +1,221 @@
+/* Author: Divya */
+/* This file controls the overall pastel green design and responsive layout. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3fff6;
+  color: #24382d;
+  font-family: Arial, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  background: #83c9a1;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #5fa47d;
+}
+
+.danger {
+  background: #e79a9a;
+}
+
+.danger:hover {
+  background: #d87878;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.auth-card,
+.modal,
+.table-card,
+.hero,
+.flashcard {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(33, 58, 44, 0.08);
+  border: 1px solid #d9e9df;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea,
+select {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #cfe3d5;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.navbar {
+  background: white;
+  border-bottom: 1px solid #d9e9df;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero {
+  padding: 24px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.hero-actions,
+.card-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.summary-text {
+  color: #587062;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.flashcard {
+  padding: 18px;
+}
+
+.answer {
+  background: #f3fff6;
+  border-radius: 14px;
+  padding: 12px;
+  color: #587062;
+}
+
+.badge-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge-row span {
+  background: #d9f2e1;
+  color: #4b8b68;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 38, 30, 0.35);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.modal {
+  width: 100%;
+  max-width: 540px;
+  padding: 24px;
+}
+
+.error {
+  background: #ffe1e1;
+  color: #7a2e2e;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.link-btn {
+  background: transparent;
+  color: #4b8b68;
+  padding-left: 0;
+}
+
+.table-card {
+  overflow-x: auto;
+  padding: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #d9e9df;
+  text-align: left;
+  padding: 12px;
+}
+
+@media (max-width: 700px) {
+  .hero,
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toolbar {
+    grid-template-columns: 1fr;
+  }
+}
