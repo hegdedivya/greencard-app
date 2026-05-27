@@ -56,7 +56,7 @@ The app behaves like a single-page application because React dynamically updates
 
 ## Folder Structure
 
-greencards-app
+greencard-app
 ├── client
 │   ├── src
 │   │   ├── api
@@ -295,12 +295,47 @@ The frontend should run on:
 http://localhost:5173
 
 Test the following functions:
--register
--login
--add flashcard
--edit flashcard
--delete flashcard
--live search
--study mode
--my history
--admin history
+- register
+- login
+- add flashcard
+- edit flashcard
+- delete flashcard
+- live search
+- study mode
+- my history
+- admin history
+
+---
+
+## Security Notes
+
+- Passwords are hashed using bcryptjs before being stored in MongoDB.
+- JWT tokens are used to authenticate users.
+- Admin-only routes are protected using role-based access control.
+- Sensitive values such as MONGO_URI and JWT_SECRET are stored in .env.
+- .env and node_modules are excluded from GitHub using .gitignore.
+
+---
+
+## API Routes
+
+### Authentication Routes
+
+POST /api/auth/register
+POST /api/auth/login
+GET  /api/auth/me
+
+### Flashcard Routes
+
+GET    /api/flashcards
+POST   /api/flashcards
+PUT    /api/flashcards/:id
+DELETE /api/flashcards/:id
+
+### Learning History Routes
+
+POST /api/history
+GET  /api/history/me
+GET  /api/history/all
+
+The /api/history/all route is protected and only available to admin users.
