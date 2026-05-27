@@ -194,7 +194,7 @@ add/edit modal
 responsive interface styling
 Shared Krithik and Divya Contribution
 
-Both Krithik and Divya worked on the user profile and learning history requirement, including:
+### Both Krithik and Divya worked on the user profile and learning history requirement, including:
 
 server/models/LearningHistory.js
 server/routes/historyRoutes.js
@@ -226,7 +226,6 @@ Each file also includes a file-level author comment to make the contribution cle
 
 If you are using Github, clone the project:
 
-```bash
 git clone https://github.com/your-username/greencards-app.git
 cd greencard-app
 
