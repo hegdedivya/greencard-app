@@ -61,3 +61,14 @@ The app behaves like a single-page application because React dynamically updates
 ```bash
 git clone https://github.com/your-username/greencards-app.git
 then run this command: npm run dev and click on the local host link to view the website.
+Open: http://localhost:5173
+Test:
+-register
+-login
+-add flashcard
+-edit flashcard
+-delete flashcard
+-live search
+-study mode
+-my history
+-admin history
