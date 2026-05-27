@@ -56,45 +56,49 @@ The app behaves like a single-page application because React dynamically updates
 
 ## Folder Structure
 
-greencard-app
-├── client
-│   ├── src
-│   │   ├── api
-│   │   │   └── api.js
-│   │   ├── components
-│   │   │   ├── FlashcardCard.jsx
-│   │   │   ├── FlashcardModal.jsx
-│   │   │   ├── Navbar.jsx
-│   │   │   └── StudyMode.jsx
-│   │   ├── pages
-│   │   │   ├── AdminHistory.jsx
-│   │   │   ├── Dashboard.jsx
-│   │   │   ├── Login.jsx
-│   │   │   ├── MyHistory.jsx
-│   │   │   └── Register.jsx
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── style.css
-│   ├── index.html
-│   └── package.json
-│
-├── server
-│   ├── middleware
-│   │   ├── adminMiddleware.js
-│   │   └── authMiddleware.js
-│   ├── models
-│   │   ├── Flashcard.js
-│   │   ├── LearningHistory.js
-│   │   └── User.js
-│   ├── routes
-│   │   ├── authRoutes.js
-│   │   ├── flashcardRoutes.js
-│   │   └── historyRoutes.js
-│   ├── server.js
-│   └── package.json
-│
-├── README.md
-└── .gitignore
+```text
+greencards-app/
+  client/
+    src/
+      api/
+        api.js
+      components/
+        FlashcardCard.jsx
+        FlashcardModal.jsx
+        Navbar.jsx
+        StudyMode.jsx
+      pages/
+        AdminHistory.jsx
+        Dashboard.jsx
+        Login.jsx
+        MyHistory.jsx
+        Register.jsx
+      App.jsx
+      main.jsx
+      style.css
+    index.html
+    package.json
+
+  server/
+    middleware/
+      adminMiddleware.js
+      authMiddleware.js
+    models/
+      Flashcard.js
+      LearningHistory.js
+      User.js
+    routes/
+      authRoutes.js
+      flashcardRoutes.js
+      historyRoutes.js
+    .env
+    .gitignore
+    package.json
+    server.js
+
+  .gitignore
+  README.md
+```
 
 ---
 
